@@ -1,0 +1,87 @@
+body{
+    user-select:none;
+}
+
+._table{
+    margin: auto;
+}
+
+img{
+	-webkit-user-drag: none;
+}
+
+.peice > div {
+    position: absolute;
+    visibility: hidden;
+}
+
+.frame{
+    position: relative;
+}
+
+.clear{
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+}
+
+.data{
+    text-align: center;
+    border: 10px solid black;
+    background-color: burlywood;
+    font-family: "HGS行書体";
+    width: 50%;
+}
+
+.text_a{
+	margin-bottom: -0.5em;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+.text_b{
+	margin-bottom: 3em;
+    font-size: x-large;
+}
+
+select{
+    height: 45px;
+    font-size: 30px;
+}
+
+.sel_Lv{
+    height: 50px;
+    font-size: 30px;
+}
+
+.database{
+    border: 10px solid black;
+    background-color: lightblue;
+    width: 500px;
+    height: auto;
+    margin: 0 auto;
+    max-width: 100%;
+    text-align: center;
+    display: none;
+}
+
+.DB_title{
+    margin-bottom: -0.8em;
+}
+
+.DB{
+    margin-bottom: 0em;
+}
+
+/* デバッグ */
+.debugB{
+    text-align: center;
+}
+
+.debug{
+    display: none;
+    text-align: center;
+}
+
+.DB_debug{
+    text-align: center;
+}
