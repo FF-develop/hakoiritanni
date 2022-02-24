@@ -1,0 +1,92 @@
+<html lang="ja">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="imagetoolbar" content="no">
+        <meta name="description" content="箱入り単位とは、「箱入り娘」というスライディングブロックパズルゲームから着想を得て高専風に作成されたゲームのことです。基本的にゲームルールは「箱入り娘」と同じですが、その駒が箱入り単位特有のものとなっています。">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <link rel="stylesheet" href="common/common.css">
+        <link rel="stylesheet" href="index.css">
+        <script type="text/javascript" src="./main.js"></script>
+      	<script type="text/javascript" src="./error.js"></script>
+        <title>箱入り単位</title>
+    </head>
+
+    <body>
+        <header>
+            <h1>箱入り単位</h1>
+        </header>
+
+        <script type="text/javascript" src="common/menubar.js"></script>    <!--メニューバー-->
+
+        <div class="container"><table class="_table" summary="箱入り単位"><tbody><tr><td>
+            <table summary="ボード"><tbody><tr><td>
+                <div class="frame" id="frame">
+                    <img src="img/frame.png"/>
+                    <div class="peice">
+                    <div id="p0"><img src="img/BP.png" onmousedown="select(0)"/></div>
+                    <div id="p1"><img src="img/SP1.png" onmousedown="select(1)"/></div>
+                    <div id="p2"><img src="img/SP2.png" onmousedown="select(2)"/></div>
+                    <div id="p3"><img src="img/SP3.png" onmousedown="select(3)"/></div>
+                    <div id="p4"><img src="img/SP4.png" onmousedown="select(4)"/></div>
+                    <div id="p5"><img src="img/SP5.png" onmousedown="select(5)"/></div>
+                    <div id="p6"><img src="img/SP6.png" onmousedown="select(6)"/></div>
+                    <div id="p7"><img src="img/VP1.png" onmousedown="select(7)"/></div>
+                    <div id="p8"><img src="img/VP2.png" onmousedown="select(8)"/></div>
+                    <div id="p9"><img src="img/VP3.png" onmousedown="select(9)"/></div>
+                    <div id="p10"><img src="img/VP4.png" onmousedown="select(10)"/></div>
+                    <div id="p11"><img src="img/HP1.png" onmousedown="select(11)"/></div>
+                    <div id="p12"><img src="img/HP2.png" onmousedown="select(12)"/></div>
+                    <div id="p13"><img src="img/HP3.png" onmousedown="select(13)"/></div>
+                    <div id="p14"><img src="img/HP4.png" onmousedown="select(14)"/></div>
+                    </div>
+                    <div class="clear" id="clear">
+                        <img src="img/clear.png"/></div> 
+                </div></td></tr></tbody></table></td>
+            
+            <td class="data">
+                <p class="text_a">〇タイム</p>
+                <p class="text_b"><span id="minute">*</span><span> 分 </span><span id="second10"></span><span id="second1">**</span><span> 秒</span></p>
+                <p class="text_a">〇動かした回数</p>
+                <p class="text_b"><span id="Count_interface">*</span> 回</p>
+                <p class="text_a">〇現在の学年（難易度）</p>
+                <p class="text_b"><span id="n_lv">*</span><span> 年生</span></p>
+                <select name="level" id="level">
+                    <option value='0'>学年変更</option>
+                    <option value="1">1年生</option>
+                    <option value="2">2年生</option>
+                    <option value="3">3年生</option>
+                    <option value="4">4年生</option>
+                    <option value="5">5年生</option>
+　　　　　　　　　　<option value="6">専1年生</option>
+                    <option value="7">専2年生</option>
+                </select>
+                <input type="submit" name="submit" value="スタート" class="sel_Lv" onclick="select_level()">
+                <p><input type="submit" name="pre_button" value="一手戻す" class="pre_button" onclick="pre_button()"></p>
+            </td></tr></tbody></table></div><br>
+
+            <div class="database" id="DB">
+            <!--削除-->
+            </div>
+
+            <!--
+            <div class="debugB">
+                <br><button type="button" onclick="debug()" disabled>stats_debug</button>
+                <button type="button" onclick="DM()"disabled>move_debug</button><br>
+                <script>function DM(){m_debug = 1;}</script>
+            </div>
+            <div class="debug" id="debugT">
+                <p>デバッグ</p>
+                X：<input type="text" id="txtX"/><br>
+                Y：<input type="text" id="txtY"/><br>
+                click：<input type="text" id="txtC" value='no_click'/><br>
+                select piece：<input type="text" id="txtS" value='no_select'/><br>
+                direction：<input type="text" id="txtD" value='no_direction'/><br>
+                count：<input type="text" id="txtMC" value='0'/><br>
+                level：<input type="text" id="txtGL" value='1'/><br>
+            </div>-->
+
+            <footer>
+                <script type="text/javascript" src="common/footer.js"></script>
+            </footer>
+    </body>
+</html>
