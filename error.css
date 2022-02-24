@@ -1,0 +1,16 @@
+.error{
+    text-align: center;
+}
+
+.ranking{
+    border: 2px solid black;
+    width: 225px;
+    height: 345px;
+    margin: 0 auto;
+    display: inline-block;
+    max-width: 100%;
+}
+
+.list{
+    overflow: hidden;
+}
